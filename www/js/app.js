@@ -31,10 +31,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
-  $stateProvider
-
-  // setup an abstract state for the tabs directive
-    .state('tab', {
+  $stateProvider.state('tab', {
     url: '/tab',
     abstract: true,
     templateUrl: 'templates/tabs.html'
@@ -44,42 +41,27 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   .state('tab.dash', {
     url: '/dash',
+
     views: {
       'tab-dash': {
         templateUrl: 'templates/tab-dash.html',
         controller: 'DashCtrl'
       }
     }
-  })
+  }).state('tab.detail', {
+        url: '/detail/:id',
 
-  .state('tab.chats', {
-      url: '/chats',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/tab-chats.html',
-          controller: 'ChatsCtrl'
+        views: {
+          'tab-detail': {
+            templateUrl: 'templates/tab-dash-user.html',
+            controller: 'UserDetailCtrl'
+          }
         }
-      }
-    })
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
-      views: {
-        'tab-chats': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
-        }
-      }
-    })
+      })
 
-  .state('tab.account', {
-    url: '/account',
-    views: {
-      'tab-account': {
-        templateUrl: 'templates/tab-account.html',
-        controller: 'AccountCtrl'
-      }
-    }
-  })
+
+
+
       .state('tab.people', {
         url: '/people',
         views: {
@@ -90,6 +72,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       })
 
+
+
       .state('tab.ideas', {
         url: '/ideas',
         views: {
@@ -99,6 +83,19 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
           }
         }
       })
+
+
+
+      .state('tab.idea', {
+        url: '/idea/:id',
+        views: {
+          'tab-idea': {
+            templateUrl: 'templates/tab-ideas.html',
+            controller: 'IdeaCtrl'
+          }
+        }
+      })
+
 
   ;
 

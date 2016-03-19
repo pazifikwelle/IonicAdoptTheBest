@@ -14,9 +14,14 @@
 
 .card .item-body h2.title {
     margin-top:0px;
+    color:#999;
 }
 
-.card .item-body button.domains,.card .item-body button.skills {
+.card .item-body h2.title.skills {
+    margin-top:16px;
+}
+
+.card .item-body button.domains,.card .item-body .button.skills {
     margin-left:0.5em;margin-right:0.5em;cursor:none;font-weight:600;padding:1px 8px 1px;
 }
 
@@ -30,4 +35,29 @@
 
 .card .item-body div.members p {
     margin-top:0;
+}
+
+
+.list .item {
+    border-bottom:0;
+}
+
+.heart {
+    text-align:right;
+}
+
+.heart .ion-heart {
+    /*fx?*/
+    color:black;
+    transition:font-size 0.5s ease;
+}
+
+
+.fxRed {
+    color:red;
+}
+
+.fxRed .ion-heart:before {
+    font-size:58px;
+    color:red;
 }

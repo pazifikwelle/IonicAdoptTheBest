@@ -7,6 +7,11 @@
                 <h1>„{{oIdea.claim}}“</h1>
             </div>
 
+            <div class="heart" ng-class="heartStyle">
+
+                <a class="button button-icon icon ion-heart" ng-click="onIdeaHeart()"></a>
+            </div>
+
             <div class="item item-body">
                 <!--<img class="full-image" src="delorean.jpg">-->
 
@@ -14,20 +19,27 @@
                     <h2 class="title">Domain</h2>
 
 
-                    <button  ng-repeat="oDom in oIdea.aDomains" class="button button-small button-positive domains " style="">
+                    <button  ng-repeat="oDom in oIdea.aDomains" class="button button-small button-stable domains " style="">
                         {{oDom.txt}}
                     </button>
 
 
 
 
-                <h2 class="title" ng-show="oIdea.aSkills.length > 0">Skills</h2>
+                <h2 class="title skills" ng-show="oIdea.aSkills.length > 0">Skills</h2>
 
 
-                <div  ng-repeat="oDom in oIdea.aSkills" class="button button-small button-positive skills" >
+                <div  ng-repeat="oDom in oIdea.aSkills" class="button button-small button-stable skills" style="margin-bottom:2em;">
                         {{oDom.txt}}
                 </div>
 
+                <button class="button button-full button-balanced" ng-hide="!oIdea.bCanJoin" ng-click="onIdeaJoin()">
+                    Join!
+                </button>
+
+                <button class="button button-full button-assertive" ng-hide="oIdea.bCanJoin" ng-click="onIdeaJoin()">
+                    Leave
+                </button>
 
                 <h2 class="title" ng-show="oIdea.aMembers.length > 0">Members</h2>
                 <div class="members" ng-repeat="oDom in oIdea.aMembers" >

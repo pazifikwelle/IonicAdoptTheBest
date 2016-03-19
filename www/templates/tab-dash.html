@@ -1,20 +1,35 @@
 <ion-view view-title="Pulse">
-  <ion-content >
+  <ion-content scroll="true">
     <div class="list">
-
-      <a class="item item-avatar" href="#">
-        <img src="venkman.jpg">
+      <a class="item item-avatar"  href="#/dash/user/1">
+        <img src="/img/max.jpg">
         <h2>The user profile of the owner</h2>
         <p>my punchline?</p>
       </a>
-
-      <div class="bar">
-        <h2 class="title">Community Pulse</h2>
-      </div>
     </div>
 
+      <div >
+          <h3 style="padding-left:16px;" class="title">My idea(s)</h3>
+      </div>
 
-    <ion-list type="card" >
+
+      <div class="list">
+          <div class="item" ng-repeat="item in aoMyCreatedIdeas" style="margin:0;">
+              <a href="#/tab/detail/{{id}}"><p>{{item.claim}}</p></a>
+          </div>
+      </div>
+
+      <h3 style="padding-left:16px;" class="title">My created ideas</h3>
+
+      <div class="list">
+          <div class="item" ng-repeat="item in aoMyIdeas" style="margin:0;">
+              <a href="#/tab/detail/{{item.id}}"><p>{{item.claim}}</p></a>
+          </div>
+      </div>
+
+
+
+   <!-- <ion-list type="card" >
       <ion-item ng-repeat="item in items" style="margin:0;">
         <a class="item item-avatar" href="#">
           <img src="venkman.jpg">
@@ -23,6 +38,7 @@
         </a>
       </ion-item>
     </ion-list>
+    -->
 
   </ion-content>
 

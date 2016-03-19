@@ -7,6 +7,133 @@ angular.module('starter.controllers', [])
 
         $scope.items = PeopleService.all();
 
+        $scope.aoMyIdeas = [
+            {
+                id:1,
+                claim: '111 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec feugiat nibh, efficitur fringilla massa. Proin porttitor eros vel bibendum hendrerit. Pellentesque turpis duis.',
+                aDomains: [{txt:'domain 1'},{txt:'domain 2'}],
+                aSkills: [{txt:'skill 1'},{txt:'skill 2'}],
+                aMembers: [
+                    {id:1,src:'#',firstname:'Stefan1',name:'Hanke'},
+                    {id:2,src:'#',firstname:'Stefan2',name:'Hanke'},
+                    {id:3,src:'#',firstname:'Stefan3',name:'Hanke'}
+                ]
+            },
+            {
+                id:2,
+                claim: '222 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec feugiat nibh, efficitur fringilla massa. Proin porttitor eros vel bibendum hendrerit. Pellentesque turpis duis.',
+                aDomains: [{txt:'domain 1'},{txt:'domain 2'}],
+                aSkills: [{txt:'skill 1'},{txt:'skill 2'}],
+                aMembers: [
+                    {id:1,src:'#',firstname:'Stefan1',name:'Hanke'},
+                    {id:2,src:'#',firstname:'Stefan2',name:'Hanke'},
+                    {id:3,src:'#',firstname:'Stefan3',name:'Hanke'}
+                ]
+            },
+            {
+                id:3,
+                claim: '222 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec feugiat nibh, efficitur fringilla massa. Proin porttitor eros vel bibendum hendrerit. Pellentesque turpis duis.',
+                aDomains: [{txt:'domain 1'},{txt:'domain 2'}],
+                aSkills: [{txt:'skill 1'},{txt:'skill 2'}],
+                aMembers: [
+                    {id:1,src:'#',firstname:'Stefan1',name:'Hanke'},
+                    {id:2,src:'#',firstname:'Stefan2',name:'Hanke'},
+                    {id:3,src:'#',firstname:'Stefan3',name:'Hanke'}
+                ]
+            },
+            {
+                id:4,
+                claim: '222 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec feugiat nibh, efficitur fringilla massa. Proin porttitor eros vel bibendum hendrerit. Pellentesque turpis duis.',
+                aDomains: [{txt:'domain 1'},{txt:'domain 2'}],
+                aSkills: [{txt:'skill 1'},{txt:'skill 2'}],
+                aMembers: [
+                    {id:1,src:'#',firstname:'Stefan1',name:'Hanke'},
+                    {id:2,src:'#',firstname:'Stefan2',name:'Hanke'},
+                    {id:3,src:'#',firstname:'Stefan3',name:'Hanke'}
+                ]
+            },
+            {
+                id:0,
+                claim: '222 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec feugiat nibh, efficitur fringilla massa. Proin porttitor eros vel bibendum hendrerit. Pellentesque turpis duis.',
+                aDomains: [{txt:'domain 1'},{txt:'domain 2'}],
+                aSkills: [{txt:'skill 1'},{txt:'skill 2'}],
+                aMembers: [
+                    {id:1,src:'#',firstname:'Stefan1',name:'Hanke'},
+                    {id:2,src:'#',firstname:'Stefan2',name:'Hanke'},
+                    {id:3,src:'#',firstname:'Stefan3',name:'Hanke'}
+                ]
+            },
+            {
+                id:0,
+                claim: '222 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec feugiat nibh, efficitur fringilla massa. Proin porttitor eros vel bibendum hendrerit. Pellentesque turpis duis.',
+                aDomains: [{txt:'domain 1'},{txt:'domain 2'}],
+                aSkills: [{txt:'skill 1'},{txt:'skill 2'}],
+                aMembers: [
+                    {id:1,src:'#',firstname:'Stefan1',name:'Hanke'},
+                    {id:2,src:'#',firstname:'Stefan2',name:'Hanke'},
+                    {id:3,src:'#',firstname:'Stefan3',name:'Hanke'}
+                ]
+            },
+            {
+                id:0,
+                claim: '222 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec feugiat nibh, efficitur fringilla massa. Proin porttitor eros vel bibendum hendrerit. Pellentesque turpis duis.',
+                aDomains: [{txt:'domain 1'},{txt:'domain 2'}],
+                aSkills: [{txt:'skill 1'},{txt:'skill 2'}],
+                aMembers: [
+                    {id:1,src:'#',firstname:'Stefan1',name:'Hanke'},
+                    {id:2,src:'#',firstname:'Stefan2',name:'Hanke'},
+                    {id:3,src:'#',firstname:'Stefan3',name:'Hanke'}
+                ]
+            },
+            {
+                id:0,
+                claim: '222 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec feugiat nibh, efficitur fringilla massa. Proin porttitor eros vel bibendum hendrerit. Pellentesque turpis duis.',
+                aDomains: [{txt:'domain 1'},{txt:'domain 2'}],
+                aSkills: [{txt:'skill 1'},{txt:'skill 2'}],
+                aMembers: [
+                    {id:1,src:'#',firstname:'Stefan1',name:'Hanke'},
+                    {id:2,src:'#',firstname:'Stefan2',name:'Hanke'},
+                    {id:3,src:'#',firstname:'Stefan3',name:'Hanke'}
+                ]
+            }
+        ];
+        $scope.aoMyCreatedIdeas = [
+            {
+                id:1,
+                claim: '333 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec feugiat nibh, efficitur fringilla massa. Proin porttitor eros vel bibendum hendrerit. Pellentesque turpis duis.',
+                aDomains: [{txt:'domain 1'},{txt:'domain 2'}],
+                aSkills: [{txt:'skill 1'},{txt:'skill 2'}],
+                aMembers: [
+                    {id:1,src:'#',firstname:'Stefan1',name:'Hanke'},
+                    {id:2,src:'#',firstname:'Stefan2',name:'Hanke'},
+                    {id:3,src:'#',firstname:'Stefan3',name:'Hanke'}
+                ]
+            },
+            {
+                id:2,
+                claim: '444 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec feugiat nibh, efficitur fringilla massa. Proin porttitor eros vel bibendum hendrerit. Pellentesque turpis duis.',
+                aDomains: [{txt:'domain 1'},{txt:'domain 2'}],
+                aSkills: [{txt:'skill 1'},{txt:'skill 2'}],
+                aMembers: [
+                    {id:1,src:'#',firstname:'Stefan1',name:'Hanke'},
+                    {id:2,src:'#',firstname:'Stefan2',name:'Hanke'},
+                    {id:3,src:'#',firstname:'Stefan3',name:'Hanke'}
+                ]
+            },
+            {
+                id:3,
+                claim: '555 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec feugiat nibh, efficitur fringilla massa. Proin porttitor eros vel bibendum hendrerit. Pellentesque turpis duis.',
+                aDomains: [{txt:'domain 1'},{txt:'domain 2'}],
+                aSkills: [{txt:'skill 1'},{txt:'skill 2'}],
+                aMembers: [
+                    {id:1,src:'#',firstname:'Stefan1',name:'Hanke'},
+                    {id:2,src:'#',firstname:'Stefan2',name:'Hanke'},
+                    {id:3,src:'#',firstname:'Stefan3',name:'Hanke'}
+                ]
+            }
+        ];
+
+
     })
 
 .controller('ChatsCtrl', function($scope, Chats) {
@@ -24,7 +151,20 @@ angular.module('starter.controllers', [])
   };
 })
 
+    .controller('IdeaCtrl', function($scope, $stateParams) {
+        console.log('idea');
+        console.log($stateParams);
+    })
+    .controller('UserDetailCtrl', function($scope, $stateParams) {
+        console.log('char');
+        console.log($stateParams);
+        console.log('::this is user detail view');
+
+    })
+
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
+        console.log('char');
+        console.log($stateParams);
   $scope.chat = Chats.get($stateParams.chatId);
 })
 
@@ -33,8 +173,9 @@ angular.module('starter.controllers', [])
     enableFriends: true
   };
 })
-    .controller('PeopleCtrl', function($scope) {
+    .controller('PeopleCtrl', function($scope,$stateParams) {
 
+        /* below the swipe-mode */
 
         var oDate = new Date();
         var sDate = oDate.toLocaleDateString();
@@ -119,12 +260,21 @@ angular.module('starter.controllers', [])
         };
 
         $scope.$on("$ionicView.beforeEnter", function(event) {
-            $scope.resetPeopleList();
+            $scope.resetUserList();
         });
 
     })
 
-    .controller('IdeasCtrl', function($scope) {
+
+    .controller('ProfileCtrl', function($scope,$stateParams) {
+
+
+
+
+        console.log(':profile controller');
+    })
+
+        .controller('IdeasCtrl', function($scope) {
 
 
         $scope.aOIdeas = [
@@ -133,27 +283,31 @@ angular.module('starter.controllers', [])
                 id:0,
                 claim: '0000 the claim of idea 1',
                 aDomains: [{txt:'domain 1888'},{txt:'domain 2556'}],
-                aSkills: [{txt:'skill 11'},{txt:'skill 22'}]
+                aSkills: [{txt:'skill 11'},{txt:'skill 22'}],
+                bCanJoin:true
             },
 
             {
                 id:1,
                 claim: '1111 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec feugiat nibh, efficitur fringilla massa. Proin porttitor eros vel bibendum hendrerit. Pellentesque turpis duis.',
                 aDomains: [{txt:'domain 1v2'},{txt:'domain 22'}],
-                aSkills: [{txt:'skill 12'},{txt:'skill 21'}]
+                aSkills: [{txt:'skill 12'},{txt:'skill 21'}],
+                bCanJoin:true
             },
             {
                 id:2,
                 claim: '222 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec feugiat nibh, efficitur fringilla massa. Proin porttitor eros vel bibendum hendrerit. Pellentesque turpis duis.',
                 aDomains: [{txt:'domain 3'},{txt:'domain 24'}],
-                aSkills: [{txt:'skill 112'},{txt:'skill 24343'}]
+                aSkills: [{txt:'skill 112'},{txt:'skill 24343'}],
+                bCanJoin:true
             },
             {
                 id:3,
                 claim: '333 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec feugiat nibh, efficitur fringilla massa. Proin porttitor eros vel bibendum hendrerit. Pellentesque turpis duis.',
 
                 aDomains: [{txt:'domain 1'},{txt:'domain 2'}],
-                aSkills: [{txt:'skill 1'},{txt:'skill 2'}]
+                aSkills: [{txt:'skill 1'},{txt:'skill 2'}],
+                bCanJoin:true
             },
             {
                 id:0,
@@ -164,7 +318,8 @@ angular.module('starter.controllers', [])
                     {id:1,src:'#',firstname:'Stefan1',name:'Hanke'},
                     {id:2,src:'#',firstname:'Stefan2',name:'Hanke'},
                     {id:3,src:'#',firstname:'Stefan3',name:'Hanke'}
-                ]
+                ],
+                bCanJoin:true
             }
 
         ];
@@ -227,6 +382,25 @@ angular.module('starter.controllers', [])
             $scope.oIdea = $scope.aOIdeas[$scope.iIdeaPointer];
         }
 
+
+        /* single idea actions */
+        $scope.heartStyle = '';
+        $scope.onIdeaHeart = function() {
+
+            if($scope.heartStyle=="") {
+                $scope.heartStyle = 'fxRed';
+            } else {
+                $scope.heartStyle = '';
+            }
+        };
+
+        $scope.onIdeaJoin = function() {
+
+
+            console.log( $scope.oIdea.bCanJoin );
+            $scope.oIdea.bCanJoin = !$scope.oIdea.bCanJoin;
+            console.log( $scope.oIdea.bCanJoin );
+        };
 
 
     })
