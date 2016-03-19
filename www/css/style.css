@@ -1,1 +1,33 @@
 /* Empty. Add your own CSS if you like */
+
+
+.card .item h1 {
+    margin-top:1em; overflow: visible;
+    text-overflow: initial;
+    white-space: normal;
+    text-align: left;font-size:25px;
+}
+
+.card .item-body {
+    border-top:0px;padding-top:0px;
+}
+
+.card .item-body h2.title {
+    margin-top:0px;
+}
+
+.card .item-body button.domains,.card .item-body button.skills {
+    margin-left:0.5em;margin-right:0.5em;cursor:none;font-weight:600;padding:1px 8px 1px;
+}
+
+.card .item-body div.members {
+    display:inline-block;width:100px;height:100px;margin-bottom:1em;text-align:center;
+}
+
+.card .item-body div.members img {
+    width:85px;height:85px;
+}
+
+.card .item-body div.members p {
+    margin-top:0;
+}

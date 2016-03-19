@@ -1,0 +1,48 @@
+<ion-view view-title="Idea-Tinder" hide-nav-bar="true" hide-back-button="true" >
+    <ion-content  on-swipe-left="onSwipeLeft()"  on-swipe-right="onSwipeRight()" >
+
+        <div class="list card no-padding row-no-padding" style="margin:0;">
+
+            <div class="item">
+                <h1>„{{oIdea.claim}}“</h1>
+            </div>
+
+            <div class="item item-body">
+                <!--<img class="full-image" src="delorean.jpg">-->
+
+
+                    <h2 class="title">Domain</h2>
+
+
+                    <button  ng-repeat="oDom in oIdea.aDomains" class="button button-small button-positive domains " style="">
+                        {{oDom.txt}}
+                    </button>
+
+
+
+
+                <h2 class="title" ng-show="oIdea.aSkills.length > 0">Skills</h2>
+
+
+                <div  ng-repeat="oDom in oIdea.aSkills" class="button button-small button-positive skills" >
+                        {{oDom.txt}}
+                </div>
+
+
+                <h2 class="title" ng-show="oIdea.aMembers.length > 0">Members</h2>
+                <div class="members" ng-repeat="oDom in oIdea.aMembers" >
+                    <img ng-src="{{oDom.src}}" style="">
+                    <p >{{oDom.firstname}} {{oDom.name}}</p>
+                </div>
+
+                <p style="display:none">
+                    <a href="#" class="subdued">1 Like</a>
+                    <a href="#" class="subdued">5 Comments</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </ion-content>
+</ion-view>
