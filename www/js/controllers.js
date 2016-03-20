@@ -133,6 +133,10 @@ angular.module('starter.controllers', [])
             }
         ];
 
+        $scope.oUser = {
+            imageSrc :'https://web2.0square.com/hhcamp/img/user.png?212121',
+            txt:'3 a funny speaking text about the person'
+        };
 
     })
 
@@ -178,32 +182,33 @@ angular.module('starter.controllers', [])
         /* below the swipe-mode */
 
         var oDate = new Date();
+        var oDate2 = new Date();
         var sDate = oDate.toLocaleDateString();
-
+        var sDate2 =  '10.3.2016';
         $scope.aOUsers = [
             {
-                imageSrc:'#',
-                txt:'1 a funny speaking text about the person',
+                imageSrc:'https://web2.0square.com/hhcamp/img/jules.png',
+                txt:'I voluntarily contribute',
                 since:sDate,
-                aDomains :[{txt:'sDom1'}],
-                aSkills: [{txt:'sKill1'}]
+                aDomains :[{txt:'Development'},{txt:'Engineering'},{txt:'Architecture'}],
+                aSkills: [{txt:'openCV'},{txt:'C'},{txt:'C++'},{txt:'Java'}]
             },
             {
-                imageSrc:'#',
-                txt:'2 a funny speaking text about the person',
+                imageSrc:'https://web2.0square.com/hhcamp/img/stefan.png',
+                txt:'I fancy mobile.',
                 since:sDate,
-                aDomains :[{txt:'sDom1'}],
-                aSkills: [{txt:'sKill132'}]
+                aDomains :[{txt:'Development'},{txt:'Tech.Innovation'},{txt:'MVP'}],
+                aSkills: [{txt:'JavaScript'},{txt:'Rapid Prototyping'},{txt:'Infrastructure'}]
             },
             {
-                imageSrc:'#',
+                imageSrc:'https://web2.0square.com/hhcamp/img/user.png',
                 txt:'3 a funny speaking text about the person',
                 since:sDate,
                 aDomains :[{txt:'sDom1'}],
                 aSkills: [{txt:'sKill123'}]
             },
             {
-                imageSrc:'#',
+                imageSrc:'https://web2.0square.com/hhcamp/img/user.png',
                 txt:'4 a funny speaking text about the person',
                 since:sDate,
                 aDomains :[{txt:'sDom1'}],
@@ -248,7 +253,7 @@ angular.module('starter.controllers', [])
             //dislike the idea and take the next one.
             console.log(':going left');
             $scope.setNextUserToScope();
-
+            console.log($scope.oUser);
 
         };
 
@@ -281,17 +286,17 @@ angular.module('starter.controllers', [])
 
             {
                 id:0,
-                claim: '0000 the claim of idea 1',
-                aDomains: [{txt:'domain 1888'},{txt:'domain 2556'}],
-                aSkills: [{txt:'skill 11'},{txt:'skill 22'}],
+                claim: 'Numériser l\'empreinte de pied pour définir la morphologie, la pointure exacte et la marque de chaussure la plus adaptée à chaque pied.',
+                aDomains: [{txt:'Podology'},{txt:'Digitalization'},{txt:'eHealth'}],
+                aSkills: [{txt:'Machine Learning'},{txt:'Product Design'},{txt:'Imaging'}],
                 bCanJoin:true
             },
 
             {
                 id:1,
-                claim: '1111 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec feugiat nibh, efficitur fringilla massa. Proin porttitor eros vel bibendum hendrerit. Pellentesque turpis duis.',
-                aDomains: [{txt:'domain 1v2'},{txt:'domain 22'}],
-                aSkills: [{txt:'skill 12'},{txt:'skill 21'}],
+                claim: 'I wanna use VR in minimally invasive surgery',
+                aDomains: [{txt:'Virtual Reality'},{txt:'Surgery'},{txt:'Startup'}],
+                aSkills: [{txt:'Image Processing'},{txt:'Economics'},{txt:'MVP'}],
                 bCanJoin:true
             },
             {
@@ -341,6 +346,7 @@ angular.module('starter.controllers', [])
 
         $scope.$on("$ionicView.beforeEnter", function(event) {
             $scope.resetIdeaList();
+
         });
 
 
@@ -368,6 +374,7 @@ angular.module('starter.controllers', [])
             if($scope.iIdeaPointer < $scope.iIdeaMaxSize){
                 $scope.iIdeaPointer++;
                 $scope.oIdea = $scope.aOIdeas[$scope.iIdeaPointer];
+                $scope.heartStyle = '';
             } else {
                 /**
                  * @todo handle no more ideas.
@@ -380,6 +387,7 @@ angular.module('starter.controllers', [])
         $scope.resetIdeaList = function() {
             $scope.iIdeaPointer = 0;
             $scope.oIdea = $scope.aOIdeas[$scope.iIdeaPointer];
+            $scope.heartStyle = '';
         }
 
 

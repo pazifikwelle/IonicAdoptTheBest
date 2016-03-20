@@ -5,9 +5,9 @@
 
 
 
-            <div class="item item-avatar">
-                <img ng-src="{{oUser.imageSrc}}">
-                <h2>{{oUser.txt}}</h2>
+            <div class="item" style="text-align:center">
+                <img src="{{oUser.imageSrc}}" style="border-radius: 50%;border: 3px solid #44b8b7;">
+                <h2 style="padding: 10px;font-weight: 500;">{{oUser.txt}}</h2>
                 <p>{{oUser.since}}</p>
             </div>
 
@@ -15,23 +15,25 @@
                 <!--<img class="full-image" src="delorean.jpg">-->
 
 
-                <h2 class="title">Domain</h2>
+                <h2 class="r title">Domain</h2>
 
+                <div class="r">
 
-                <button  ng-repeat="oDom in oUser.aDomains" class="button button-small button-positive domains " ">
+                    <button  ng-repeat="oDom in oUser.aDomains" class="button button-small button-light domains">
                     {{oDom.txt}}
-                </button>
+                    </button>
 
-
-
-
-                <h2 class="title" ng-show="oIdea.aSkills.length > 0">Skills</h2>
-
-
-                <div  ng-repeat="oDom in oUser.aSkills" class="button button-small button-positive skills" >
-                    {{oDom.txt}}
                 </div>
 
+
+
+
+                <h2 class="r title" ng-show="oUser.aSkills.length > 0">Skills</h2>
+                <div class="r">
+                    <div  ng-repeat="oDom in oUser.aSkills" class="button button-small button-light skills" >
+                        {{oDom.txt}}
+                    </div>
+                </div>
 
                <!-- <h2 class="title" ng-show="oIdea.aMembers.length > 0">Members</h2>
                 <div class="members" ng-repeat="oDom in oIdea.aMembers" >
